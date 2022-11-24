@@ -441,6 +441,8 @@ MonoBehaviour:
   animator: {fileID: 7391531267039368290}
   arma: {fileID: 3766936295148032378}
   canMove: 0
+  damageCuchillo: 0
+  EnemigoVida: {fileID: 0}
 --- !u!114 &7391531267039368318
 MonoBehaviour:
   m_ObjectHideFlags: 0

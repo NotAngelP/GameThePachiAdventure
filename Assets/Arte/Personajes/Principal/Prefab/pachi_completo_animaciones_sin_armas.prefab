@@ -820,6 +820,7 @@ MonoBehaviour:
   jugadorAnim: {fileID: 2921296424756366388}
   jugadorScript: {fileID: 2921296424756366386}
   jugadorAtaque: {fileID: 0}
+  jugadorEscudo: {fileID: 0}
   canDash: 0
   dashing: 0
 --- !u!1 &2921296425009857838
