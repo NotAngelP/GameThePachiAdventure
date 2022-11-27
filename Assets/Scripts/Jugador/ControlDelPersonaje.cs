@@ -34,6 +34,7 @@ public class ControlDelPersonaje : MonoBehaviour{
     public bool canMove;
     public bool moviendose;
 
+
     void Start(){
         controlador = GetComponent<CharacterController>();
         canMove = true;
