@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BocaEnemigo1 : MonoBehaviour
+public class MacheteJefe : MonoBehaviour
 {
     public VidaJugador jugadorVida;
     public float damage;

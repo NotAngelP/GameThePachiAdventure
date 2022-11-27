@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemigo : MonoBehaviour
+public class Jefe1 : MonoBehaviour
 {
+
+    public float random;
     public float rangoDeAlerta;
     public LayerMask capaDelJugador;
     public Transform jugador;
@@ -16,11 +18,6 @@ public class Enemigo : MonoBehaviour
     bool rangoAtacar;
     bool esperar;
     bool attack;
-
-    public int rutina;
-    public float cronometro;
-    public Quaternion angulo;
-    public float grado;
     
     // Start is called before the first frame update
     void Start()
@@ -49,7 +46,7 @@ public class Enemigo : MonoBehaviour
                 }
                 else{
                     if(esperar==false){
-                        caminarAleatorio();
+                        
                     }
                 }
             }
@@ -71,25 +68,23 @@ public class Enemigo : MonoBehaviour
     }   
 
     void caminarAleatorio(){
-        cronometro += 1 * Time.deltaTime;
-        if(cronometro >=4){
-            rutina = Random.Range(0,2);
-            cronometro = 0;
-        }
-        switch(rutina){
-            case 0: animator.SetFloat("EstaEnMovimiento", 0);
-                    break;
-            case 1: grado = Random.Range(0,361);
-                    angulo = Quaternion.Euler(0,grado,0);
-                    rutina++;
-                    break;
-            case 2: transform.rotation = Quaternion.RotateTowards(transform.rotation, angulo, 0.5f);
-                    transform.Translate(Vector3.forward * 1 * Time.deltaTime);
-                    animator.SetFloat("EstaEnMovimiento", 2);
-                    break;
-        }
+        random = Random.Range(-5,6);
+        animator.SetFloat("EstaEnMovimiento", 3);
+       // transform.position = Vector3.MoveTowards(transform.position,, velocidad * Time.deltaTime);
+        StartCoroutine("Esperar2");
     }
 
+    IEnumerator Esperar(){
+        yield return new WaitForSeconds(6);
+        esperar=false;
+        print("hola");
+    }
+
+    IEnumerator Esperar2(){
+        yield return new WaitForSeconds(1);
+        animator.SetFloat("EstaEnMovimiento", 0);
+        StartCoroutine("Esperar");
+    }
 
     IEnumerator esperandoParaAtacar(){
         print("esperando");
@@ -97,6 +92,8 @@ public class Enemigo : MonoBehaviour
         print("ya espero");
         attack=true;
     }
+
+
 
 
     public void ColliderWeaponTrue(){
