@@ -215,7 +215,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &1297996499
 GameObject:
@@ -314,7 +314,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2934828544214218966, guid: d576c42bc70d1944081af46ca1176a6b, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2934828544214218966, guid: d576c42bc70d1944081af46ca1176a6b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -358,7 +358,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d576c42bc70d1944081af46ca1176a6b, type: 3}
---- !u!1001 &2535875851360330248
+--- !u!1001 &1802214511
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -367,19 +367,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3195347022322693053, guid: 18093f1e84d63514495d4a891ee833aa, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3195347022322693053, guid: 18093f1e84d63514495d4a891ee833aa, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 3195347022322693053, guid: 18093f1e84d63514495d4a891ee833aa, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5
+      value: -7.2
       objectReference: {fileID: 0}
     - target: {fileID: 3195347022322693053, guid: 18093f1e84d63514495d4a891ee833aa, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -42
+      value: -42.8
       objectReference: {fileID: 0}
     - target: {fileID: 3195347022322693053, guid: 18093f1e84d63514495d4a891ee833aa, type: 3}
       propertyPath: m_LocalRotation.w
@@ -411,7 +411,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8207459553734663113, guid: 18093f1e84d63514495d4a891ee833aa, type: 3}
       propertyPath: m_Name
-      value: Quad
+      value: Punto
+      objectReference: {fileID: 0}
+    - target: {fileID: 8725393122028347065, guid: 18093f1e84d63514495d4a891ee833aa, type: 3}
+      propertyPath: m_Size.x
+      value: 1.2392913
+      objectReference: {fileID: 0}
+    - target: {fileID: 8725393122028347065, guid: 18093f1e84d63514495d4a891ee833aa, type: 3}
+      propertyPath: m_Center.x
+      value: 0.017274857
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18093f1e84d63514495d4a891ee833aa, type: 3}
