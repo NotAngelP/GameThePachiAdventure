@@ -13,18 +13,18 @@ public class Enemigo : MonoBehaviour
     public Animator animator;
     public GameObject arma;
     public bool canMove;
-    public float damageCuchillo;
-    public VidaEnemigo1 EnemigoVida;
 
     bool estarAlerta;
     bool rangoAtacar;
     bool esperar;
+    bool attack;
     
     // Start is called before the first frame update
     void Start()
     {
-        esperar=false;
-        canMove=true;
+        esperar = false;
+        canMove = true;
+        attack = true;
     }
 
     // Update is called once per frame
@@ -36,6 +36,7 @@ public class Enemigo : MonoBehaviour
 
 
             if(rangoAtacar==false){
+                attack=true;
                 animator.SetBool("Atacar",false);
                 if(estarAlerta){
                     Vector3 posJugador = new Vector3(jugador.position.x,transform.position.y,jugador.position.z);
@@ -50,8 +51,12 @@ public class Enemigo : MonoBehaviour
                 }
             }
             else{
+                if(attack){
+                    attack=false;
                     animator.SetFloat("EstaEnMovimiento", 0);
                     animator.SetBool("Atacar",true);
+                }
+                    
             }
         }
     }
@@ -79,8 +84,15 @@ public class Enemigo : MonoBehaviour
         yield return new WaitForSeconds(1);
         animator.SetFloat("EstaEnMovimiento", 0);
         StartCoroutine("Esperar");
-
     }
+
+    IEnumerator esperandoParaAtacar(){
+        print("esperando");
+        yield return new WaitForSeconds(2);
+        print("ya espero");
+        attack=true;
+    }
+
 
 
 
@@ -92,14 +104,9 @@ public class Enemigo : MonoBehaviour
         arma.GetComponent<BoxCollider>().enabled = true;
     }
 
-     void OnTriggerEnter(Collider collider) {
-        if(collider.CompareTag("CuchilloPachi")){
-           EnemigoVida.vidaEnemigo=EnemigoVida.vidaEnemigo-damageCuchillo;
-           print("Daño -2");
-            
-        }
+    void cooldownAttack(){
+        animator.SetBool("Atacar",false);
+        StartCoroutine("esperandoParaAtacar");
     }
 
-
-    
 }
