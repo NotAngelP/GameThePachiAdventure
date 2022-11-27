@@ -100,7 +100,7 @@ ModelImporter:
       takeName: Scene
       internalID: 723096430288179899
       firstFrame: 66
-      lastFrame: 80
+      lastFrame: 95
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -128,8 +128,8 @@ ModelImporter:
       name: Dead
       takeName: Scene
       internalID: 1963079803359675471
-      firstFrame: 81
-      lastFrame: 110
+      firstFrame: 96
+      lastFrame: 130
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
