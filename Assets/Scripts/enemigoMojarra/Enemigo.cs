@@ -13,8 +13,6 @@ public class Enemigo : MonoBehaviour
     public Animator animator;
     public GameObject arma;
     public bool canMove;
-    public float damageCuchillo;
-    public VidaEnemigo1 EnemigoVida;
 
     bool estarAlerta;
     bool rangoAtacar;
@@ -92,14 +90,5 @@ public class Enemigo : MonoBehaviour
         arma.GetComponent<BoxCollider>().enabled = true;
     }
 
-     void OnTriggerEnter(Collider collider) {
-        if(collider.CompareTag("CuchilloPachi")){
-           EnemigoVida.vidaEnemigo=EnemigoVida.vidaEnemigo-damageCuchillo;
-           print("Daño -2");
-            
-        }
-    }
-
-
-    
+     
 }
