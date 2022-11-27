@@ -6,11 +6,13 @@ public class VidaEnemigo1 : MonoBehaviour
 {
     public EnemigoDead enemigoDead;
     public float vidaEnemigo;
+    public float vidaMax;
     public bool isLive;
     void Start()
     {
         isLive=true;
         vidaEnemigo=4;
+        vidaMax = vidaEnemigo;
     }
 
     // Update is called once per frame

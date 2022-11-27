@@ -3,7 +3,13 @@ guid: 25b0d5fdbad8bfa40aff326bf8343de6
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - playerDead: {instanceID: 0}
+  - corazon1: {instanceID: 0}
+  - corazon2: {instanceID: 0}
+  - corazon3: {instanceID: 0}
+  - corazonLleno: {fileID: 21300000, guid: bc8cd77990447cd4e96b5353febda272, type: 3}
+  - corazonMitad: {fileID: 21300000, guid: ad6a28a089c4b7b4baeb62e7f73a5ab4, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
