@@ -4,5 +4,20 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Primer Nivel/Primer Cuarto.unity
+    guid: 48b0b71478af4cd449fcd689c97e56b1
+  - enabled: 1
+    path: Assets/Scenes/Primer Nivel/Segundo Cuarto.unity
+    guid: 1cdb1bebd6c98394a8d87db8521998d6
+  - enabled: 1
+    path: Assets/Scenes/Primer Nivel/Tercer Cuarto.unity
+    guid: d9b7f0597edba7544964f8a320d9916b
+  - enabled: 1
+    path: Assets/Scenes/Primer Nivel/Cuarto Cuarto.unity
+    guid: cb0549ac87e4b61428a24da15c7ba60a
+  - enabled: 1
+    path: Assets/Scenes/Primer Nivel/Quinto Cuarto.unity
+    guid: 13799f097eefe284589458f6443b3e33
   m_configObjects: {}
