@@ -52,9 +52,9 @@ public class Enemigo : MonoBehaviour
             }
             else{
                 if(attack){
-                    attack=false;
-                    animator.SetFloat("EstaEnMovimiento", 0);
-                    animator.SetBool("Atacar",true);
+                        attack=false;
+                        animator.SetFloat("EstaEnMovimiento", 0);
+                        animator.SetBool("Atacar",true);
                 }
                     
             }
@@ -101,7 +101,7 @@ public class Enemigo : MonoBehaviour
     }
 
     public void ColliderWeaponFalse(){
-        arma.GetComponent<BoxCollider>().enabled = true;
+        arma.GetComponent<BoxCollider>().enabled = false;
     }
 
     void cooldownAttack(){

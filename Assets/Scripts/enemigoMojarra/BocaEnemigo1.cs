@@ -31,5 +31,6 @@ public class BocaEnemigo1 : MonoBehaviour
            print("bloqueo");
             
         }
+
     }
 }
