@@ -49,8 +49,6 @@ public class Enemigo : MonoBehaviour
                 }
                 else{
                     if(esperar==false){
-                        print("esperando");
-                        //transform.position = Vector3.MoveTowards(transform.position,rx, velocidad * Time.deltaTime);
                         caminarAleatorio();
                     }
                 }
@@ -92,17 +90,6 @@ public class Enemigo : MonoBehaviour
         }
     }
 
-    IEnumerator Esperar(){
-        yield return new WaitForSeconds(6);
-        esperar=false;
-        print("hola");
-    }
-
-    IEnumerator Esperar2(){
-        yield return new WaitForSeconds(1);
-        animator.SetFloat("EstaEnMovimiento", 0);
-        StartCoroutine("Esperar");
-    }
 
     IEnumerator esperandoParaAtacar(){
         print("esperando");
@@ -110,8 +97,6 @@ public class Enemigo : MonoBehaviour
         print("ya espero");
         attack=true;
     }
-
-
 
 
     public void ColliderWeaponTrue(){
