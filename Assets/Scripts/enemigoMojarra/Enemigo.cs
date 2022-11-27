@@ -32,7 +32,7 @@ public class Enemigo : MonoBehaviour
     {
         if(canMove){
             estarAlerta = Physics.CheckSphere(transform.position,rangoDeAlerta,capaDelJugador);
-            rangoAtacar = Physics.CheckSphere(transform.position,2.5f,capaDelJugador);
+            rangoAtacar = Physics.CheckSphere(transform.position,2f,capaDelJugador);
 
 
             if(rangoAtacar==false){
@@ -64,7 +64,7 @@ public class Enemigo : MonoBehaviour
     private void OnDrawGizmos() {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, rangoDeAlerta);
-        Gizmos.DrawWireSphere(transform.position, 2.5f);
+        Gizmos.DrawWireSphere(transform.position, 2f);
     }   
 
     void caminarAleatorio(){
