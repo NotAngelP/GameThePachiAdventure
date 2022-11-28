@@ -140,15 +140,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3036777627613352493, guid: 6268bef4d3c543f4c8e9745cb14f82c0, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.5215
+      value: 2.503172
       objectReference: {fileID: 0}
     - target: {fileID: 3036777627613352493, guid: 6268bef4d3c543f4c8e9745cb14f82c0, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.5215
+      value: 2.503172
       objectReference: {fileID: 0}
     - target: {fileID: 3036777627613352493, guid: 6268bef4d3c543f4c8e9745cb14f82c0, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.5215
+      value: 2.503172
       objectReference: {fileID: 0}
     - target: {fileID: 3036777627613352493, guid: 6268bef4d3c543f4c8e9745cb14f82c0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -156,7 +156,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3036777627613352493, guid: 6268bef4d3c543f4c8e9745cb14f82c0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.9
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 3036777627613352493, guid: 6268bef4d3c543f4c8e9745cb14f82c0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -736,8 +736,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 1665573137}
   lines:
-  - Hola, Bienvenido al tutorial
-  - "Te ense\xF1are como moverte"
+  - "Hola peque\xF1o humano, parece que te despertaste con el pie izquierdo."
+  - "Mi nombre es R.O.B y te encuentras en el fondo marino, dentro del laboratorio
+    del grande y poderosisimo Dr.Pengu la mente m\xE1s brillante del reino animal."
+  - 'R.O.B : Te ves desconsertado humano, no te preocupes el Dr. pengu se encargara
+    de tratarte bien cuando esperimente contigo.'
+  - 'R.O.B : JA  JA  JA  JA  JA no te asustes, solo me gusta bromear con los chicos
+    nuevos.'
+  - "R.O.B : La verdad no soy muy fan de los experimentos del Dr. Pengu, ciertmente
+    comparto algunos de sus ideales pues soy su creaci\xF3n pero algunos de sus metodos
+    no me parecen correctos seg\xFAn mis calc\xFAlos."
+  - "R.O.B : As\xED que como me caiste bien, te ense\xF1are algunos trucos."
+  - "R.O.B : Atento humano que controla al peque\xF1o humano jarochito!"
+  - 'R.O.B : Pulsa las teclas "WASD" para moverte.'
+  - "R.O.B : Tedr\xE1s que enfrentarte a peces mutantes creados por los experimentos
+    de Dr.Pengu."
+  - "R.O.B : As\xED que, usa ese cuchillo y defiendete como buen jarocho pulsando
+    la tecla \"J\"."
+  - 'R.O.B : Para hacer un combo, pulsa "J" repetidas veces, pero no muy rapido o
+    habra una falla de sistema :['
+  - "R.O.B : Tambien tendras que defenderte as\xED que pulsa \"K\" para cubrirte
+    con ese bonito escudo y vulvelo a pulsar para dejar de cubrirte >:D."
+  - "R.O.B : Habr\xE1 ocasiones en las que tengas que escapar o ser m\xE1s rapido
+    que tus enemigos, usa la \"barra espaciadora\" para rodar por el piso y moverte
+    m\xE1s rapido!"
+  - "R.O.B : Bueno peque\xF1o pachi, eso es todo lo que puedo ense\xF1arte, asi que,
+    es el momento de que vayas a la aventura a salvar a tu peque\xF1o amiguito cangrejo. "
   textSpeed: 0.1
 --- !u!1 &1665573135
 GameObject:
