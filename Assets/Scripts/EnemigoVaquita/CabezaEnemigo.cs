@@ -27,7 +27,7 @@ public class CabezaEnemigo : MonoBehaviour
         }
         if(collider.CompareTag("Escudo")){
            
-           gameObject.GetComponent<BoxCollider>().enabled = false;
+           gameObject.GetComponent<CapsuleCollider>().enabled = false;
            print("bloqueo");
             
         }

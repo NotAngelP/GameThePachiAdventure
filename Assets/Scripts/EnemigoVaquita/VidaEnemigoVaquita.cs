@@ -4,22 +4,22 @@ using UnityEngine;
 
 public class VidaEnemigoVaquita : MonoBehaviour
 {
-    public EnemigoDead enemigoDead;
-    public float vidaEnemigo;
+    public EnemigoDeadVaquita enemigoDead;
+    public float vidaVaquita;
     public bool isLive;
     public float vidaMax;
     void Start()
     {
         isLive=true;
-        vidaEnemigo=4;
-        vidaMax = vidaEnemigo;
+        vidaVaquita=4;
+        vidaMax = vidaVaquita;
     }
 
     // Update is called once per frame
     void Update()
     {
         if(isLive){
-            if(vidaEnemigo==0){
+            if(vidaVaquita<=0){
                 enemigoDead.contador=false;
                 isLive=false;
             }
