@@ -13,7 +13,14 @@ public class Ataque : MonoBehaviour
     public bool attacking;
     public int nroP;
     public bool canAttack;
-  
+    
+    //sonidos
+    public AudioClip[] espadas;
+    AudioSource mAudioSource;
+
+    private void Awake() {
+        mAudioSource = GetComponent<AudioSource>();
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -87,4 +94,24 @@ public class Ataque : MonoBehaviour
             nroP=0;
         }
     }
+
+
+
+    //Metodos de sonidos
+    void SonidoEspada1(){
+        mAudioSource.clip = espadas[0];
+        mAudioSource.Play();
+    }
+
+    void SonidoEspada2(){
+        mAudioSource.clip = espadas[1];
+        mAudioSource.Play();
+    }
+
+    void SonidoEspada3(){
+        mAudioSource.clip = espadas[2];
+        mAudioSource.Play();
+    }
+
+
 }

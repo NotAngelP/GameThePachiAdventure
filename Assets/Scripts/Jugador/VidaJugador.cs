@@ -7,6 +7,7 @@ public class VidaJugador : MonoBehaviour
     public Dead playerDead;
     public float vidaDePachi;
     public bool isLive;
+    public Corazones corazones;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +24,7 @@ public class VidaJugador : MonoBehaviour
                 isLive=false;
             }
         }
+        corazones.setImagenesCorazones(vidaDePachi);
         
     }
 
