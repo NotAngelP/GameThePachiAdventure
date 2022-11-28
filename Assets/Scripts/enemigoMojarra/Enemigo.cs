@@ -44,7 +44,7 @@ public class Enemigo : MonoBehaviour
                 if(estarAlerta){
                     Vector3 posJugador = new Vector3(jugador.position.x,transform.position.y,jugador.position.z);
                     transform.LookAt(posJugador);
-                    animator.SetFloat("EstaEnMovimiento", 2);
+                    animator.SetFloat("EstaEnMovimiento", 2f);
                     transform.position = Vector3.MoveTowards(transform.position,posJugador, velocidad * Time.deltaTime);
                 }
                 else{
