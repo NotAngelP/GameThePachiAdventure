@@ -22,11 +22,10 @@ public class MacheteJefe : MonoBehaviour
     void OnTriggerEnter(Collider collider) {
         if(collider.CompareTag("Pachi")){
            jugadorVida.vidaDePachi=jugadorVida.vidaDePachi-damage;
-           print("Daño -1");
-            
+           print("Daño -"+damage);
         }
+
         if(collider.CompareTag("Escudo")){
-           
            gameObject.GetComponent<BoxCollider>().enabled = false;
            print("bloqueo");
             

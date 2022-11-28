@@ -5,6 +5,7 @@ using UnityEngine;
 public class CuchilloPachi : MonoBehaviour
 {
     public VidaEnemigo1 EnemigoVida;
+    public VidaJefe1 vidaJefe;
     public float damageMojarra;
 
     // Start is called before the first frame update
@@ -23,8 +24,13 @@ public class CuchilloPachi : MonoBehaviour
         if(collider.CompareTag("EnemigoMojarra")){
            EnemigoVida.vidaEnemigo=EnemigoVida.vidaEnemigo-damageMojarra;
            print("Daño -2");
-            
+        }
+
+        if(collider.CompareTag("JefePulpo")){
+           vidaJefe.vidaJefe=vidaJefe.vidaJefe-damageMojarra;
+           print("Daño -2");
         }
     }
+
    
 }

@@ -6,9 +6,9 @@ public class JefeDead1 : MonoBehaviour
 {
     public Animator jugadorAnim;
     public bool contador;
-    public Enemigo enemigo;
+    public Jefe1 Jefe;
     public bool EliminarEnemigo;
-    public GameObject Mojarra;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,12 +22,12 @@ public class JefeDead1 : MonoBehaviour
         if(contador==false){
             jugadorAnim.SetTrigger("DeadEnemigo");
             contador=true;
-            enemigo.canMove=false;
+            Jefe.canMove=false;
         }    
 
         if(EliminarEnemigo==true){
             Destroy(gameObject,4.25f);
-            print("enemigo eliminado");
+            print("Jefe eliminado");
         }    
     }
 

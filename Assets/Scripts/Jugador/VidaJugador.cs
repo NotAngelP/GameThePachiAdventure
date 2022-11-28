@@ -19,7 +19,7 @@ public class VidaJugador : MonoBehaviour
     void Update()
     {
         if(isLive){
-            if(vidaDePachi==0){
+            if(vidaDePachi<=0){
                 playerDead.contador=false;
                 isLive=false;
             }

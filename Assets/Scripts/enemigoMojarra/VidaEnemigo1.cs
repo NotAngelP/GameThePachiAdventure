@@ -19,7 +19,7 @@ public class VidaEnemigo1 : MonoBehaviour
     void Update()
     {
         if(isLive){
-            if(vidaEnemigo==0){
+            if(vidaEnemigo<=0){
                 enemigoDead.contador=false;
                 isLive=false;
             }

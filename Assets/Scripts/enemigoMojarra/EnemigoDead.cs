@@ -8,7 +8,6 @@ public class EnemigoDead : MonoBehaviour
     public bool contador;
     public Enemigo enemigo;
     public bool EliminarEnemigo;
-    public GameObject Mojarra;
     // Start is called before the first frame update
     void Start()
     {

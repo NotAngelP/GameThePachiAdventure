@@ -9,8 +9,8 @@ public class Enemigo : MonoBehaviour
     public Transform jugador;
     public float velocidad;
     public Animator animator;
-    public GameObject arma;
     public bool canMove;
+    public GameObject arma;
 
     bool estarAlerta;
     bool rangoAtacar;
@@ -35,7 +35,7 @@ public class Enemigo : MonoBehaviour
     {
         if(canMove){
             estarAlerta = Physics.CheckSphere(transform.position,rangoDeAlerta,capaDelJugador);
-            rangoAtacar = Physics.CheckSphere(transform.position,2f,capaDelJugador);
+            rangoAtacar = Physics.CheckSphere(transform.position,2.15f,capaDelJugador);
 
 
             if(rangoAtacar==false){
@@ -67,7 +67,7 @@ public class Enemigo : MonoBehaviour
     private void OnDrawGizmos() {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, rangoDeAlerta);
-        Gizmos.DrawWireSphere(transform.position, 2f);
+        Gizmos.DrawWireSphere(transform.position, 2.15f);
     }   
 
     void caminarAleatorio(){
@@ -90,6 +90,13 @@ public class Enemigo : MonoBehaviour
         }
     }
 
+    public void ColliderWeaponTrue(){
+    arma.GetComponent<BoxCollider>().enabled = true;
+    }
+
+    public void ColliderWeaponFalse(){
+    arma.GetComponent<BoxCollider>().enabled = false;
+    }
 
     IEnumerator esperandoParaAtacar(){
         print("esperando");
@@ -98,18 +105,10 @@ public class Enemigo : MonoBehaviour
         attack=true;
     }
 
-
-    public void ColliderWeaponTrue(){
-        arma.GetComponent<BoxCollider>().enabled = true;
-    }
-
-    public void ColliderWeaponFalse(){
-        arma.GetComponent<BoxCollider>().enabled = false;
-    }
-
     void cooldownAttack(){
         animator.SetBool("Atacar",false);
         StartCoroutine("esperandoParaAtacar");
     }
 
+    
 }
