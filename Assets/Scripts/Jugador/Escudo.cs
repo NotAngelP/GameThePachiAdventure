@@ -26,7 +26,7 @@ public class Escudo : MonoBehaviour
     {
         if(jugadorDash.dashing==false && jugadorAtaque.attacking==false){
             if(cubriendose==false){
-                if(Input.GetKeyDown(KeyCode.K)){
+                if(Input.GetMouseButtonDown(1)){
                     nroP++;
                     if(canCubrirse==true && nroP==1){
                     jugadorAnim.SetTrigger("ActivarEscudo");
@@ -36,7 +36,7 @@ public class Escudo : MonoBehaviour
                 }  
             }
             else{
-                if(Input.GetKeyDown(KeyCode.K)){
+                if(Input.GetMouseButtonDown(1)){
                      if(BajarEscudoCorriendo==true){
                         jugadorAnim.SetTrigger("BajarEscudoCorriendo");
                      }

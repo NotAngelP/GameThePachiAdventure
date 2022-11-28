@@ -31,11 +31,11 @@ public class Ataque : MonoBehaviour
 
     }
 
-    // Update is called once per frame
+    // Update is called once per frame      Input.GetKeyDown(KeyCode.J)
     void Update()
     {
         if(canAttack == true && jugadorDash.dashing==false){
-            if(Input.GetKeyDown(KeyCode.J)){
+            if(Input.GetMouseButtonDown(0)){
                 nroP++;
                 if(canAttack==true && nroP==1){
                     jugadorAnim.SetTrigger("Attack");
