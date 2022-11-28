@@ -20,7 +20,7 @@ public class Dialogue_Script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown("q")){
+        if(Input.GetKeyDown("e")){
             if (dialogueText.text == lines[index])
             {
                 NextLine();
