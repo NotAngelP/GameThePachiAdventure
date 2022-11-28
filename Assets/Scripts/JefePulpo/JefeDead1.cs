@@ -26,7 +26,7 @@ public class JefeDead1 : MonoBehaviour
         }    
 
         if(EliminarEnemigo==true){
-            Destroy(gameObject,4.25f);
+            Destroy(gameObject,10f);
             print("Jefe eliminado");
         }    
     }
