@@ -27,8 +27,14 @@ public class Dead : MonoBehaviour
                 jugadorAtaque.canAttack= false;
                 jugadorDash.canDash = false;
                 jugadorEscudo.canCubrirse= false;
+                jugadorEscudo.cubriendose=false;
             }     
     }
+
+    void noMorverse(){
+        jugadorScript.canMove=false;
+    }
+
 
 }
 
