@@ -37,7 +37,7 @@ public class Jefe1 : MonoBehaviour
     {
         if(canMove){
             estarAlerta = Physics.CheckSphere(transform.position,rangoDeAlerta,capaDelJugador);
-            rangoAtacar = Physics.CheckSphere(transform.position,3f,capaDelJugador);
+            rangoAtacar = Physics.CheckSphere(transform.position,2.6f,capaDelJugador);
 
 
             if(rangoAtacar==false){
@@ -69,7 +69,7 @@ public class Jefe1 : MonoBehaviour
     private void OnDrawGizmos() {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, rangoDeAlerta);
-        Gizmos.DrawWireSphere(transform.position, 3f);
+        Gizmos.DrawWireSphere(transform.position, 2.6f);
     }   
 
     void caminarAleatorio(){
