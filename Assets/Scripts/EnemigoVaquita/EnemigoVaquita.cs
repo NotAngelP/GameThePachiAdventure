@@ -35,7 +35,7 @@ public class EnemigoVaquita : MonoBehaviour
     {
         if(canMove){
             estarAlerta = Physics.CheckSphere(transform.position,rangoDeAlerta,capaDelJugador);
-            rangoAtacar = Physics.CheckSphere(transform.position,2f,capaDelJugador);
+            rangoAtacar = Physics.CheckSphere(transform.position,1.7f,capaDelJugador);
 
 
             if(rangoAtacar==false){
@@ -44,7 +44,7 @@ public class EnemigoVaquita : MonoBehaviour
                 if(estarAlerta){
                     Vector3 posJugador = new Vector3(jugador.position.x,transform.position.y,jugador.position.z);
                     transform.LookAt(posJugador);
-                    animator.SetFloat("EstaEnMovimiento", 2);
+                    animator.SetFloat("EstaEnMovimiento", 3);
                     transform.position = Vector3.MoveTowards(transform.position,posJugador, velocidad * Time.deltaTime);
                 }
                 else{
@@ -67,7 +67,7 @@ public class EnemigoVaquita : MonoBehaviour
     private void OnDrawGizmos() {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, rangoDeAlerta);
-        Gizmos.DrawWireSphere(transform.position, 2f);
+        Gizmos.DrawWireSphere(transform.position, 1.7f);
     }   
 
     void caminarAleatorio(){
@@ -100,11 +100,11 @@ public class EnemigoVaquita : MonoBehaviour
 
 
     public void ColliderWeaponTrue(){
-        arma.GetComponent<BoxCollider>().enabled = true;
+        arma.GetComponent<CapsuleCollider>().enabled = true;
     }
 
     public void ColliderWeaponFalse(){
-        arma.GetComponent<BoxCollider>().enabled = false;
+        arma.GetComponent<CapsuleCollider>().enabled = false;
     }
 
     void cooldownAttack(){

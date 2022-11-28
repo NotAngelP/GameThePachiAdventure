@@ -6,9 +6,9 @@ public class EnemigoDeadVaquita : MonoBehaviour
 {
     public Animator jugadorAnim;
     public bool contador;
-    public Enemigo enemigo;
+    public EnemigoVaquita enemigo;
     public bool EliminarEnemigo;
-    public GameObject Mojarra;
+
     // Start is called before the first frame update
     void Start()
     {
