@@ -28,4 +28,20 @@ public class VidaJugador : MonoBehaviour
         
     }
 
+    void OnTriggerEnter(Collider collider) {
+        if(collider.CompareTag("RefrescoVida")) {
+            if(vidaDePachi < 6) {
+                if(vidaDePachi < 5) {
+                    // Aumenta en 2
+                    vidaDePachi+=2;
+                    Destroy(collider.gameObject);
+                } else {
+                    // Aumenta en 1
+                    vidaDePachi++;
+                    Destroy(collider.gameObject);
+                }
+            }
+        }
+    }
+
 }
