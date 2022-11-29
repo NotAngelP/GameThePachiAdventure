@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Dead : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class Dead : MonoBehaviour
     public Ataque jugadorAtaque;
     public Dash jugadorDash;
     public Escudo jugadorEscudo;
+    public int numeroEscena; //Poner el numero de la escena en la que se encuentra
 
     public bool contador;
     // Start is called before the first frame update
@@ -33,6 +35,9 @@ public class Dead : MonoBehaviour
 
     void noMorverse(){
         jugadorScript.canMove=false;
+        //Cambio de Escena
+        SceneManager.LoadScene(numeroEscena);
+
     }
 
 
