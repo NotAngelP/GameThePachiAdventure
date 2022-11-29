@@ -9,6 +9,15 @@ public class JefeDead1 : MonoBehaviour
     public Jefe1 Jefe;
     public bool EliminarEnemigo;
 
+    public AudioClip[] sonidos;
+    AudioSource mAudioSource;
+    // Start is called before the first frame update
+    
+    private void Awake() {
+        mAudioSource = GetComponent<AudioSource>();
+    }
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,5 +42,10 @@ public class JefeDead1 : MonoBehaviour
 
     void DesaparecerEnemigos(){
         EliminarEnemigo=true;
+    }
+
+    public void SonidoMuerte(){
+        mAudioSource.clip = sonidos[0];
+        mAudioSource.Play();
     }
 }
