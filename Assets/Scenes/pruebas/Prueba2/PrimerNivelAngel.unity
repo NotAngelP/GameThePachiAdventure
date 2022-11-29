@@ -903,8 +903,8 @@ AudioSource:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 1
-      value: 0.13398153
+      time: 0.9763489
+      value: 0
       inSlope: -0.04087342
       outSlope: -0.04087342
       tangentMode: 0
@@ -3561,7 +3561,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7477093276113355045, guid: 0bfa374c4941a7948b2eef88a984e926, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 97
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7477093276113355045, guid: 0bfa374c4941a7948b2eef88a984e926, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3569,7 +3569,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7477093276113355045, guid: 0bfa374c4941a7948b2eef88a984e926, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 279
+      value: -3.55
       objectReference: {fileID: 0}
     - target: {fileID: 7477093276113355045, guid: 0bfa374c4941a7948b2eef88a984e926, type: 3}
       propertyPath: m_LocalRotation.w
