@@ -7,7 +7,7 @@ public class Escenario3 : MonoBehaviour
     public Contador contador;
     bool activarAnimacion;
     public Animator ani;
-
+    public puertaCerrada puerta;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +22,7 @@ public class Escenario3 : MonoBehaviour
                 activarAnimacion=false;
                 print("puertas abiertas");
                 ani.SetTrigger("OpenDoor");
+                puerta.activarSonido=true;
             }
         }
     }
