@@ -21,6 +21,7 @@ public class Enemigo : MonoBehaviour
     public float cronometro;
     public Quaternion angulo;
     public float grado;
+
     
     // Start is called before the first frame update
     void Start()
@@ -109,6 +110,7 @@ public class Enemigo : MonoBehaviour
         animator.SetBool("Atacar",false);
         StartCoroutine("esperandoParaAtacar");
     }
+
 
     
 }

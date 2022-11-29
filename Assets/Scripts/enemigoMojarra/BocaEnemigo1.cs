@@ -6,6 +6,7 @@ public class BocaEnemigo1 : MonoBehaviour
 {
     public VidaJugador jugadorVida;
     public float damage;
+    
 
     //sonidos
     public AudioClip[] sonidos;
@@ -53,4 +54,5 @@ public class BocaEnemigo1 : MonoBehaviour
         mAudioSource.clip = sonidos[1];
         mAudioSource.Play();
     }
+
 }
