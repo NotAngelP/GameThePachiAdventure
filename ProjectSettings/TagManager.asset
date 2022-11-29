@@ -11,6 +11,7 @@ TagManager:
   - "Pira\xF1aMojarra"
   - EnemigoMojarra
   - JefePulpo
+  - RefrescoVida
   layers:
   - Default
   - TransparentFX
