@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/pruebas/Prueba2/Menu_incio/Menu_incio.unity
-    guid: d1b58031d521ee147a4776ee35d267ac
+    path: Assets/Scenes/pruebas/Prueba2/Menu_incio/MenuInicioDaniel.unity
+    guid: dcc2ebe4e546c4142a8cd48bf8503c13
   - enabled: 1
     path: Assets/Scenes/pruebas/Prueba2/PrimerNivelAngel.unity
     guid: 2ef110e981f724a48853cfb7d82bea7f
@@ -20,19 +20,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/pruebas/Prueba2/SegundoNivelAngel.unity
     guid: 338c3e6c66f837442b73ad77574daa16
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   m_configObjects: {}

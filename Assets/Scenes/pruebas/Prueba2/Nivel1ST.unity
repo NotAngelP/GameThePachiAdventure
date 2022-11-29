@@ -3605,7 +3605,7 @@ PrefabInstance:
       objectReference: {fileID: 1062582175}
     - target: {fileID: 7477093276113355053, guid: 0bfa374c4941a7948b2eef88a984e926, type: 3}
       propertyPath: numeroEscena
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7477093276113355054, guid: 0bfa374c4941a7948b2eef88a984e926, type: 3}
       propertyPath: espadas.Array.size

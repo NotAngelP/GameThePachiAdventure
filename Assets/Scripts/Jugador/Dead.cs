@@ -37,7 +37,7 @@ public class Dead : MonoBehaviour
         jugadorScript.canMove=false;
         //Cambio de Escena
         SceneManager.LoadScene(numeroEscena);
-
+        
     }
 
 
