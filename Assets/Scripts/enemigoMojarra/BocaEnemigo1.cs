@@ -30,6 +30,7 @@ public class BocaEnemigo1 : MonoBehaviour
     void OnTriggerEnter(Collider collider) {
         if(collider.CompareTag("Pachi")){
            jugadorVida.vidaDePachi=jugadorVida.vidaDePachi-damage;
+           SonidoMordida();
            print("Daño -1");
             
         }
@@ -45,6 +46,11 @@ public class BocaEnemigo1 : MonoBehaviour
 
     void SonidoEscudo(){
         mAudioSource.clip = sonidos[0];
+        mAudioSource.Play();
+    }
+
+    void SonidoMordida(){
+        mAudioSource.clip = sonidos[1];
         mAudioSource.Play();
     }
 }
