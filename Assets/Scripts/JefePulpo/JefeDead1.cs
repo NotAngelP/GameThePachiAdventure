@@ -32,11 +32,21 @@ public class JefeDead1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         if(contador==false){
             Idle=false;
+            mAudioSource.Stop();
             jugadorAnim.SetTrigger("DeadEnemigo");
+            SonidoMuerte();
             contador=true;
             Jefe.canMove=false;
+        }
+        else{
+            if(Idle){
+            SonidoIdle();
+            Idle=false;
+            StartCoroutine("EsperarAudio");
+        }
         }    
 
         if(EliminarEnemigo==true){
@@ -47,11 +57,6 @@ public class JefeDead1 : MonoBehaviour
             EliminarEnemigo=false;
         }   
 
-        if(Idle){
-            SonidoIdle();
-            Idle=false;
-            StartCoroutine("EsperarAudio");
-        }
     }
 
     void DesaparecerEnemigos(){
@@ -76,7 +81,12 @@ public class JefeDead1 : MonoBehaviour
 
     IEnumerator EsperarAudio(){
         yield return new WaitForSeconds(8);
-        Idle=true;
+        if(contador==false){
+            Idle=false;
+        }
+        else{
+            Idle=true;
+        }
         
     }
 }

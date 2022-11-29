@@ -322,7 +322,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 1.08
+  m_Radius: 0.85
   m_Height: 4.26
   m_Direction: 1
   m_Center: {x: 0, y: 1.69, z: 0}
@@ -387,6 +387,7 @@ MonoBehaviour:
   contador: 0
   enemigo: {fileID: 9167752098969734855}
   EliminarEnemigo: 0
+  contadorEnemy: {fileID: 0}
   sonidos:
   - {fileID: 8300000, guid: 8f3a0c5d4e15e1d43ae2fc3fe4d55e4f, type: 3}
 --- !u!114 &9167752098969734873

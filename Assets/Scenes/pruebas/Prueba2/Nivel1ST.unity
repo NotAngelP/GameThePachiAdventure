@@ -2246,7 +2246,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be86d3fed8970df4495ab564e88ab76e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numeroEscena: 2
+  numeroEscena: 4
   Texto: {fileID: 307453472}
 --- !u!65 &384210291
 BoxCollider:
