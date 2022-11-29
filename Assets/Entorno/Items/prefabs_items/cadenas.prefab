@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 495447713644235171}
   - component: {fileID: 3553327493127882246}
   - component: {fileID: 1633403476313944780}
+  - component: {fileID: 5604712784384268264}
   m_Layer: 0
   m_Name: cadenas
   m_TagString: Untagged
@@ -84,3 +85,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5604712784384268264
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985162137338581785}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.7806396, y: 9.118113, z: 0.36178508}
+  m_Center: {x: -2.8437102, y: 3.5124466, z: -0.0045893486}

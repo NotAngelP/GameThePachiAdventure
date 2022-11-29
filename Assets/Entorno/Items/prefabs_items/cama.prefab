@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5156667715120538576}
   - component: {fileID: 8088449960622894197}
   - component: {fileID: 6330659385930668223}
+  - component: {fileID: -4156350789561964648}
   m_Layer: 0
   m_Name: cama
   m_TagString: Untagged
@@ -86,3 +87,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &-4156350789561964648
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5538294338750806378}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.1768966, y: 1.7538507, z: 3.8171535}
+  m_Center: {x: 0.00009536743, y: -0.019789016, z: -0.4255003}
