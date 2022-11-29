@@ -7,6 +7,14 @@ public class BocaEnemigo1 : MonoBehaviour
     public VidaJugador jugadorVida;
     public float damage;
 
+    //sonidos
+    public AudioClip[] sonidos;
+    AudioSource mAudioSource;
+
+    private void Awake() {
+        mAudioSource = GetComponent<AudioSource>();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,9 +36,15 @@ public class BocaEnemigo1 : MonoBehaviour
         if(collider.CompareTag("Escudo")){
            
            gameObject.GetComponent<BoxCollider>().enabled = false;
+           SonidoEscudo();
            print("bloqueo");
             
         }
 
+    }
+
+    void SonidoEscudo(){
+        mAudioSource.clip = sonidos[0];
+        mAudioSource.Play();
     }
 }
