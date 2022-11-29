@@ -8,6 +8,7 @@ public class EnemigoDead : MonoBehaviour
     public bool contador;
     public Enemigo enemigo;
     public bool EliminarEnemigo;
+    public Contador contadorEnemy;
 
     public AudioClip[] sonidos;
     AudioSource mAudioSource;
@@ -34,7 +35,9 @@ public class EnemigoDead : MonoBehaviour
 
         if(EliminarEnemigo==true){
             Destroy(gameObject,4.25f);
+            contadorEnemy.contador=contadorEnemy.contador+1;
             print("enemigo eliminado");
+            EliminarEnemigo=false;
         }    
     }
 
