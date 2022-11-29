@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Escenario1 : MonoBehaviour
+public class Escenario5 : MonoBehaviour
 {
     public Contador contador;
     bool activarAnimacion;
@@ -17,7 +17,7 @@ public class Escenario1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(contador.contador==2){
+        if(contador.contador==12){
             if(activarAnimacion){
                 activarAnimacion=false;
                 print("puertas abiertas");
