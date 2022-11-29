@@ -1,5 +1,81 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2028857288099539168
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2535002013698063913}
+  - component: {fileID: 2363418819385972149}
+  - component: {fileID: 2455130705236392963}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2535002013698063913
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028857288099539168}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2210807254225378048}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -262.97003, y: 120.74559}
+  m_SizeDelta: {x: 254.7824, y: 146.3128}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &2363418819385972149
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028857288099539168}
+  m_CullTransparentMesh: 1
+--- !u!114 &2455130705236392963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028857288099539168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 0c506ffd9879de24d9bf27a88a64bd16, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &2210807252362211855
 GameObject:
   m_ObjectHideFlags: 0
@@ -113,7 +189,7 @@ GameObject:
   - component: {fileID: 2210807253161129315}
   - component: {fileID: 2210807253161129244}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: texto_E
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -248,7 +324,7 @@ GameObject:
   - component: {fileID: 2210807253178370609}
   - component: {fileID: 2210807253178370610}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: texto_dialogo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -404,6 +480,7 @@ RectTransform:
   m_Children:
   - {fileID: 2210807253178370611}
   - {fileID: 2210807253161129245}
+  - {fileID: 2535002013698063913}
   m_Father: {fileID: 2210807252362211859}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -480,11 +557,11 @@ MonoBehaviour:
   - "R.O.B : Tedr\xE1s que enfrentarte a peces mutantes creados por los experimentos
     de Dr.Pengu."
   - "R.O.B : As\xED que, usa ese cuchillo y defiendete como buen jarocho pulsando
-    la tecla \"J\"."
-  - 'R.O.B : Para hacer un combo, pulsa "J" repetidas veces, pero no muy rapido o
-    habra una falla de sistema :['
-  - "R.O.B : Tambien tendras que defenderte as\xED que pulsa \"K\" para cubrirte
-    con ese bonito escudo y vulvelo a pulsar para dejar de cubrirte >:D."
+    \"click izquierdo\" en tu rat\xF3n.."
+  - 'R.O.B : Para hacer un combo, pulsa "click izquierdo" repetidas veces, pero no
+    muy rapido o habra una falla de sistema :['
+  - "R.O.B : Tambien tendras que defenderte as\xED que pulsa \"click derecha\" para
+    cubrirte con ese bonito escudo y vulvelo a pulsar para dejar de cubrirte >:D."
   - "R.O.B : Habr\xE1 ocasiones en las que tengas que escapar o ser m\xE1s rapido
     que tus enemigos, usa la \"barra espaciadora\" para rodar por el piso y moverte
     m\xE1s rapido!"
