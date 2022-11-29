@@ -8,6 +8,7 @@ public class EnemigoDeadVaquita : MonoBehaviour
     public bool contador;
     public EnemigoVaquita enemigo;
     public bool EliminarEnemigo;
+    public Contador contadorEnemy;
 
     //sonidos
     public AudioClip[] sonidos;
@@ -36,7 +37,9 @@ public class EnemigoDeadVaquita : MonoBehaviour
 
         if(EliminarEnemigo==true){
             Destroy(gameObject,4.25f);
+            contadorEnemy.contador=contadorEnemy.contador+1;
             print("enemigo eliminado");
+            EliminarEnemigo=false;
         }    
     }
 

@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: open_door3
+  m_Name: OpenDoor
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,18 +20,18 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: {x: 0, y: 0, z: 97.41439}
-        inSlope: {x: -0, y: 6.7511873, z: 7.1054274e-13}
-        outSlope: {x: -0, y: 6.7511873, z: 7.1054274e-13}
+        value: {x: 99.47864, y: 0, z: -1.1274996}
+        inSlope: {x: 1.4210855e-12, y: 6.7511873, z: -1.110223e-14}
+        outSlope: {x: 1.4210855e-12, y: 6.7511873, z: -1.110223e-14}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
         time: 7.8333335
-        value: {x: 0, y: 35.0806, z: 97.41439}
-        inSlope: {x: -0, y: 6.751197, z: 3.0451862e-13}
-        outSlope: {x: -0, y: 6.751197, z: 3.0451862e-13}
+        value: {x: 99.47864, y: 35.0806, z: -1.1274996}
+        inSlope: {x: 6.0903723e-13, y: 6.751197, z: -4.7581034e-15}
+        outSlope: {x: 6.0903723e-13, y: 6.751197, z: -4.7581034e-15}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
@@ -39,13 +39,13 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: puerta
+    path: puerta1
   - curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: {x: 0, y: 35.0806, z: -97.57719}
+        value: {x: 0, y: 35.0806, z: 100.942665}
         inSlope: {x: -0, y: 0, z: 0}
         outSlope: {x: -0, y: 0, z: 0}
         tangentMode: 0
@@ -67,7 +67,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 2713294318
+      path: 3301939549
       attribute: 1
       script: {fileID: 0}
       typeID: 4
@@ -107,18 +107,18 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0
-        inSlope: -0
-        outSlope: -0
+        value: 99.47864
+        inSlope: 1.4210855e-12
+        outSlope: 1.4210855e-12
         tangentMode: 0
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 7.8333335
-        value: 0
-        inSlope: -0
-        outSlope: -0
+        value: 99.47864
+        inSlope: 6.0903723e-13
+        outSlope: 6.0903723e-13
         tangentMode: 0
         weightedMode: 0
         inWeight: 0.33333334
@@ -127,7 +127,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: puerta
+    path: puerta1
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -155,7 +155,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.y
-    path: puerta
+    path: puerta1
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -163,18 +163,18 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 97.41439
-        inSlope: 7.1054274e-13
-        outSlope: 7.1054274e-13
+        value: -1.1274996
+        inSlope: -1.110223e-14
+        outSlope: -1.110223e-14
         tangentMode: 0
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 7.8333335
-        value: 97.41439
-        inSlope: 3.0451862e-13
-        outSlope: 3.0451862e-13
+        value: -1.1274996
+        inSlope: -4.7581034e-15
+        outSlope: -4.7581034e-15
         tangentMode: 0
         weightedMode: 0
         inWeight: 0.33333334
@@ -183,7 +183,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.z
-    path: puerta
+    path: puerta1
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -229,9 +229,9 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: -97.57719
-        inSlope: -3.0451862e-13
-        outSlope: -3.0451862e-13
+        value: 100.942665
+        inSlope: 6.0903723e-13
+        outSlope: 6.0903723e-13
         tangentMode: 0
         weightedMode: 0
         inWeight: 0.33333334
