@@ -11,6 +11,8 @@ public class Escenario5 : MonoBehaviour
 
     public AudioClip[] sonidos;
     public AudioSource mAudioSource;
+
+    public soundtrack soundtrack;
     // Start is called before the first frame update
     
     private void Awake() {
@@ -39,6 +41,7 @@ public class Escenario5 : MonoBehaviour
     void OnTriggerEnter(Collider collider) {
         if(collider.CompareTag("Pachi")){
            gameObject.GetComponent<BoxCollider>().enabled = false;
+           soundtrack.mAudioSource.Stop();
            SoundTrack();
         }
     }

@@ -28,6 +28,7 @@ public class Ataque : MonoBehaviour
         nroP = 0;
         canAttack = true;
         attacking = false;
+        
 
     }
 
@@ -45,6 +46,7 @@ public class Ataque : MonoBehaviour
 
             }
         }
+
    }
  
 
@@ -113,5 +115,5 @@ public class Ataque : MonoBehaviour
         mAudioSource.Play();
     }
 
-
+   
 }
