@@ -8,7 +8,15 @@ public class EnemigoDead : MonoBehaviour
     public bool contador;
     public Enemigo enemigo;
     public bool EliminarEnemigo;
+
+    public AudioClip[] sonidos;
+    AudioSource mAudioSource;
     // Start is called before the first frame update
+    
+    private void Awake() {
+        mAudioSource = GetComponent<AudioSource>();
+    }
+    
     void Start()
     {
         contador=true;
@@ -32,5 +40,10 @@ public class EnemigoDead : MonoBehaviour
 
     void DesaparecerEnemigos(){
         EliminarEnemigo=true;
+    }
+
+    public void SonidoMuerte(){
+        mAudioSource.clip = sonidos[0];
+        mAudioSource.Play();
     }
 }

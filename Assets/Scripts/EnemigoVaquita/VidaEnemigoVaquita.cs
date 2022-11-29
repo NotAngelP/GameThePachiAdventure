@@ -8,6 +8,8 @@ public class VidaEnemigoVaquita : MonoBehaviour
     public float vidaVaquita;
     public bool isLive;
     public float vidaMax;
+    public CuchilloPachi CuchilloPachi;
+
     void Start()
     {
         isLive=true;
@@ -23,6 +25,14 @@ public class VidaEnemigoVaquita : MonoBehaviour
                 enemigoDead.contador=false;
                 isLive=false;
             }
+        }
+    }
+
+    void OnTriggerEnter(Collider collider) {
+        if(collider.CompareTag("CuchilloPachi")){
+           vidaVaquita=vidaVaquita - CuchilloPachi.damage;
+           print("Daño -" + CuchilloPachi.damage);
+            
         }
     }
 }
