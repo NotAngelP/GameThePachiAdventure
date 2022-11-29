@@ -486,7 +486,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 57.2314}
+  m_AnchoredPosition: {x: 0, y: 57.231445}
   m_SizeDelta: {x: -19.2833, y: 95.179}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2210807254225378054
@@ -544,27 +544,29 @@ MonoBehaviour:
   - "Hola peque\xF1o humano, parece que te despertaste con el pie izquierdo."
   - "Mi nombre es R.O.B y te encuentras en el fondo marino, dentro del laboratorio
     del grande y poderosisimo Dr.Pengu la mente m\xE1s brillante del reino animal."
-  - 'R.O.B : Te ves desconsertado humano, no te preocupes el Dr. pengu se encargara
-    de tratarte bien cuando esperimente contigo.'
+  - "R.O.B : Te ves desconcertado humano, no te preocupes el Dr. pengu se encargar\xE1
+    de tratarte bien cuando experimente contigo."
   - 'R.O.B : JA  JA  JA  JA  JA no te asustes, solo me gusta bromear con los chicos
     nuevos.'
   - "R.O.B : La verdad no soy muy fan de los experimentos del Dr. Pengu, ciertmente
-    comparto algunos de sus ideales pues soy su creaci\xF3n pero algunos de sus metodos
-    no me parecen correctos seg\xFAn mis calc\xFAlos."
-  - "R.O.B : As\xED que como me caiste bien, te ense\xF1are algunos trucos."
+    comparto algunos de sus ideales pues soy su creaci\xF3n, pero algunos de sus
+    metodos no me parecen correctos seg\xFAn mis calc\xFAlos."
+  - "R.O.B : As\xED que como me caiste bien, te ense\xF1ar\xE9 algunos trucos."
   - "R.O.B : Atento humano que controla al peque\xF1o humano jarochito!"
-  - 'R.O.B : Pulsa las teclas "WASD" para moverte.'
+  - 'R.O.B : Pulsa las teclas "W A S D" para moverte.'
   - "R.O.B : Tedr\xE1s que enfrentarte a peces mutantes creados por los experimentos
     de Dr.Pengu."
   - "R.O.B : As\xED que, usa ese cuchillo y defiendete como buen jarocho pulsando
     \"click izquierdo\" en tu rat\xF3n.."
-  - 'R.O.B : Para hacer un combo, pulsa "click izquierdo" repetidas veces, pero no
-    muy rapido o habra una falla de sistema :['
-  - "R.O.B : Tambien tendras que defenderte as\xED que pulsa \"click derecha\" para
-    cubrirte con ese bonito escudo y vulvelo a pulsar para dejar de cubrirte >:D."
+  - "R.O.B : Para hacer un combo, pulsa \"click izquierdo\" repetidas veces, pero
+    no muy rapido o habr\xE1 una falla de sistema :["
+  - "R.O.B : Tambien tendr\xE1s que defenderte as\xED que pulsa \"click derecho\"
+    para cubrirte con ese bonito escudo y vulvelo a pulsar para dejar de cubrirte
+    >:D."
   - "R.O.B : Habr\xE1 ocasiones en las que tengas que escapar o ser m\xE1s rapido
     que tus enemigos, usa la \"barra espaciadora\" para rodar por el piso y moverte
     m\xE1s rapido!"
   - "R.O.B : Bueno peque\xF1o pachi, eso es todo lo que puedo ense\xF1arte, asi que,
-    es el momento de que vayas a la aventura a salvar a tu peque\xF1o amiguito cangrejo. "
+    es el momento de que vayas a la aventura a salvar a tu peque\xF1o amiguito cangrejo,
+    bueno, no tan peque\xF1o. "
   textSpeed: 0.1
