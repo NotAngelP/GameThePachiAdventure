@@ -542,13 +542,13 @@ MonoBehaviour:
   dialogueText: {fileID: 2210807253178370610}
   lines:
   - "Hola peque\xF1o humano, parece que te despertaste con el pie izquierdo."
-  - "Mi nombre es R.O.B y te encuentras en el fondo marino, dentro del laboratorio
-    del grande y poderosisimo Dr.Pengu la mente m\xE1s brillante del reino animal."
-  - "R.O.B : Te ves desconcertado humano, no te preocupes el Dr. pengu se encargar\xE1
+  - "Mi nombre es R.O.B y te encuentras en el fondo marino dentro del laboratorio
+    del grande y poderosisimo Dr.Pengu, la mente m\xE1s brillante del reino animal."
+  - "R.O.B : Te ves desconcertado humano, no te preocupes, el Dr. pengu se encargar\xE1
     de tratarte bien cuando experimente contigo."
   - 'R.O.B : JA  JA  JA  JA  JA no te asustes, solo me gusta bromear con los chicos
     nuevos.'
-  - "R.O.B : La verdad no soy muy fan de los experimentos del Dr. Pengu, ciertmente
+  - "R.O.B : La verdad no soy muy fan de los experimentos del Dr. Pengu, ciertamente
     comparto algunos de sus ideales pues soy su creaci\xF3n, pero algunos de sus
     metodos no me parecen correctos seg\xFAn mis calc\xFAlos."
   - "R.O.B : As\xED que como me caiste bien, te ense\xF1ar\xE9 algunos trucos."
