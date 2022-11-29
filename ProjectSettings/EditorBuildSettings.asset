@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/pruebas/Prueba2/PrimerNivelAngel.unity
     guid: 2ef110e981f724a48853cfb7d82bea7f
   - enabled: 1
+    path: Assets/Scenes/pruebas/Prueba2/Nivel1ST.unity
+    guid: 5b3dcf455f74bd649b3ad3f9c4a0ce02
+  - enabled: 1
     path: Assets/Scenes/pruebas/Prueba2/SegundoNivelAngel.unity
     guid: 338c3e6c66f837442b73ad77574daa16
   - enabled: 0
