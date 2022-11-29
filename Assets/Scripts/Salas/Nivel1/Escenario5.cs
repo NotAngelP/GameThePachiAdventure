@@ -8,6 +8,15 @@ public class Escenario5 : MonoBehaviour
     bool activarAnimacion;
     public Animator ani;
     public puertaCerrada puerta;
+
+    public AudioClip[] sonidos;
+    public AudioSource mAudioSource;
+    // Start is called before the first frame update
+    
+    private void Awake() {
+        mAudioSource = GetComponent<AudioSource>();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,5 +34,17 @@ public class Escenario5 : MonoBehaviour
                 puerta.activarSonido=true;
             }
         }
+    }
+
+    void OnTriggerEnter(Collider collider) {
+        if(collider.CompareTag("Pachi")){
+           gameObject.GetComponent<BoxCollider>().enabled = false;
+           SoundTrack();
+        }
+    }
+
+    public void SoundTrack(){
+        mAudioSource.clip = sonidos[0];
+        mAudioSource.Play();
     }
 }
