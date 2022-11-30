@@ -35,9 +35,16 @@ public class Dead : MonoBehaviour
 
     void noMorverse(){
         jugadorScript.canMove=false;
-        //Cambio de Escena
+    }
+
+
+    void cambiarEscena(){
+      StartCoroutine("Esperar");
+    }
+
+    IEnumerator Esperar(){
+        yield return new WaitForSeconds(5);
         SceneManager.LoadScene(numeroEscena);
-        
     }
 
 

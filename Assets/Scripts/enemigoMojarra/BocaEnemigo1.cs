@@ -11,6 +11,7 @@ public class BocaEnemigo1 : MonoBehaviour
     //sonidos
     public AudioClip[] sonidos;
     AudioSource mAudioSource;
+    public AudioSource nAudio;
 
     private void Awake() {
         mAudioSource = GetComponent<AudioSource>();
@@ -30,8 +31,11 @@ public class BocaEnemigo1 : MonoBehaviour
 
     void OnTriggerEnter(Collider collider) {
         if(collider.CompareTag("Pachi")){
+            SonidoMordida();
            jugadorVida.vidaDePachi=jugadorVida.vidaDePachi-damage;
-           SonidoMordida();
+           if(jugadorVida.vidaDePachi>0){
+                danoPachi();
+           }
            print("Daño -1");
             
         }
@@ -54,5 +58,11 @@ public class BocaEnemigo1 : MonoBehaviour
         mAudioSource.clip = sonidos[1];
         mAudioSource.Play();
     }
+
+    void danoPachi(){
+        nAudio.clip = sonidos[2];
+        nAudio.Play();
+    }
+
 
 }

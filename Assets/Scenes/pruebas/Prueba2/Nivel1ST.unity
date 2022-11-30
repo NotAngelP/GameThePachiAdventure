@@ -3609,12 +3609,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7477093276113355054, guid: 0bfa374c4941a7948b2eef88a984e926, type: 3}
       propertyPath: espadas.Array.size
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7477093276113355054, guid: 0bfa374c4941a7948b2eef88a984e926, type: 3}
       propertyPath: espadas.Array.data[3]
       value: 
-      objectReference: {fileID: 8300000, guid: 6d80f5870022d234cacfb6a7cff717e7, type: 3}
+      objectReference: {fileID: 8300000, guid: b1f9f2cc48ee13c48965d2f9b3b40108, type: 3}
+    - target: {fileID: 7477093276113355054, guid: 0bfa374c4941a7948b2eef88a984e926, type: 3}
+      propertyPath: espadas.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: 1db8536d3663ae8498f62ec1d71fa675, type: 3}
     - target: {fileID: 7477093276113355057, guid: 0bfa374c4941a7948b2eef88a984e926, type: 3}
       propertyPath: camara
       value: 

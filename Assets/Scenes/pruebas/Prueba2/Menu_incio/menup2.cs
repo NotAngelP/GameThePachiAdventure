@@ -8,7 +8,7 @@ public class menup2 : MonoBehaviour
 
     public void Iniciar()
     {
-        SceneManager.LoadScene("Nivel1ST");
+        SceneManager.LoadScene("MenuInicioDaniel");
     }
     
 

@@ -115,5 +115,15 @@ public class Ataque : MonoBehaviour
         mAudioSource.Play();
     }
 
+    void SonidoDash(){
+        mAudioSource.clip = espadas[3];
+        mAudioSource.Play();
+    }
+
+    void SonidoDead(){
+        mAudioSource.clip = espadas[4];
+        mAudioSource.Play();
+    }
+
    
 }
