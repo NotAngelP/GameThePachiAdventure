@@ -14,6 +14,7 @@ public class JefeDead1 : MonoBehaviour
 
     public AudioClip[] sonidos;
     AudioSource mAudioSource;
+    bool validar;
     // Start is called before the first frame update
     
     private void Awake() {
@@ -27,27 +28,31 @@ public class JefeDead1 : MonoBehaviour
         Idle=true;
         contador=true;
         EliminarEnemigo=false;
+        validar =true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+       
         if(contador==false){
-            Idle=false;
-            mAudioSource.Stop();
-            jugadorAnim.SetTrigger("DeadEnemigo");
-            SonidoMuerte();
-            contador=true;
-            Jefe.canMove=false;
+            if(validar){
+                validar=false;
+                Idle=false;
+                mAudioSource.Stop();
+                jugadorAnim.SetTrigger("DeadEnemigo");
+                SonidoMuerte();
+                Jefe.canMove=false;
+            }
         }
         else{
             if(Idle){
             SonidoIdle();
             Idle=false;
             StartCoroutine("EsperarAudio");
+            }  
         }
-        }    
+
 
         if(EliminarEnemigo==true){
             Destroy(gameObject,10f);
