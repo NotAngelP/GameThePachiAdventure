@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/pruebas/Prueba2/Menu_incio/MenuMuerte2.unity
     guid: 3849a6fdfa8e2b94ea31c4aa86733a1f
+  - enabled: 1
+    path: Assets/Scenes/pruebas/Prueba2/Menu_incio/creditos.unity
+    guid: 8917b39257525004d9433d5e15feea68
   m_configObjects: {}

@@ -8,6 +8,6 @@ public class Jugar : MonoBehaviour
 
     public void Iniciar()
     {
-        SceneManager.LoadScene("PrimerNivelAngel");
+        SceneManager.LoadScene("creditos");
     }
 }
