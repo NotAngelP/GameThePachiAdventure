@@ -966,6 +966,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1594476804379129665, guid: 3c902e49bbe4451488f766ee05b85b33, type: 3}
+      propertyPath: far clip plane
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 1594476804379129666, guid: 3c902e49bbe4451488f766ee05b85b33, type: 3}
       propertyPath: m_Name
       value: Main Camera
